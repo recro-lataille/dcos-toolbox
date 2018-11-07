@@ -1,1 +1,54 @@
+Cluster Sizing
 
+bootstrap
+/ default AMI setting (minimum 100G)
+/boot default AMI setting
+/home default AMI setting
+/var default AMI setting (minimum 200G)
+/var/log default AMI setting (minimum 20G)
+/tmp default AMI setting (minimum 10G)
+/opt (optional) default AMI setting (minimum 20G)
+swap default AMI setting
+
+master
+/ default AMI setting
+/boot default AMI setting
+/home default AMI setting
+/var default AMI setting (minimum 20G)
+/var/log default AMI setting (minimum 20G)
+/tmp default AMI setting (minimum 10G)
+/opt (optional) default AMI setting (minimum 20G)
+swap default AMI setting
+---
+/var/lib/dcos min 10G, must be SSD+
+/var/lib/docker 80G
+
+
+
+private
+/ default AMI setting
+/boot default AMI setting
+/home default AMI setting
+/var default AMI setting (minimum 20G)
+/var/log default AMI setting (minimum 20G)
+/tmp default AMI setting (minimum 10G)
+/opt (optional) default AMI setting (minimum 20G)
+swap default AMI setting
+---
+/var/lib/dcos 80G
+/var/lib/docker 40G
+/var/lib/mesos 40G
+
+public
+/ default AMI setting
+/boot default AMI setting
+/home default AMI setting
+/var default AMI setting (minimum 20G)
+/var/log default AMI setting (minimum 20G)
+/tmp default AMI setting (minimum 10G)
+/opt (optional) default AMI setting (minimum 20G)
+swap default AMI setting
+---
+/var/lib/dcos 10G
+/var/lib/docker 40G
+/var/lib/mesos 40G
